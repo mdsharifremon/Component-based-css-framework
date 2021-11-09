@@ -1,1 +1,22 @@
-@use "../settings/index" as s;
+@use "../abstracts" as *;
+
+/****************************************************************
+                        Flexbox Grid Layout CSS Styles
+*****************************************************************/
+
+
+@include breakpoint (tablet){
+    .flex{
+        width:100%;
+    }
+}
+@include breakpoint-max(laptop){
+    .flex{
+        width:100%;
+    }
+}
+@include breakpoint-min-max(529px,768px){
+    .flex{
+        width:100%;
+    }
+}

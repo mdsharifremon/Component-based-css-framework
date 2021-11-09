@@ -1,11 +1,16 @@
-@use "../settings/_index.scss" as v;
+@use "../abstracts" as *;
+
+/****************************************************************
+                       Component CSS Styles
+*****************************************************************/
 p{
     font-size: 16px;
     color: gray;
-    background-color:v.$black;
+    background-color:$black;
 }
 h1{
     font-size: 24px;
-    color: v.$red;
-    background-color:v.$gray;
+    color: $red;
+    background-color:$gray;
+    line-height: 1.5;
 }

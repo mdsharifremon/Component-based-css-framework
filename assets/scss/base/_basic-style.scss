@@ -1,0 +1,17 @@
+@use "../abstracts" as *;
+
+
+/****************************************************************
+                        Basic CSS Styles
+*****************************************************************/
+
+@each $name, $font-size in $tag-font-size{
+    #{$name} {
+        font-size: $font-size;
+    }
+}
+@each $name, $font-size in $text-font-size{
+    #{$name} {
+        font-size: $font-size;
+    }
+}
