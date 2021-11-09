@@ -1,42 +1,58 @@
-$mobile: 529px;
-$tablet: 768px;
-$laptop: 1024px;
-$desktop:1200px;
+$media:(
+'mobile': 529px,
+'tablet': 768px,
+'laptop': 1024px,
+'desktop':1200px,
+) !default;
 
+@mixin media($media-widths){
+    @if map-has-key($media, $media-widths){
+        @media (max-width: map-get($media,$media-widths)){
+            @content;
+        }
+    }  
+    @else {
+      @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Available breakpoints are: #{map-keys($breakpoints)}.";
+    }
+}
 
+@mixin media-max($media-widths){
+    @if map-has-key($media, $media-widths){
+        @media (max-width: map-get($media,$media-widths)){
+            @content;
+        }
+    }  
+    @else {
+      @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Available breakpoints are: #{map-keys($breakpoints)}.";
+    }
+}
+
+@mixin media-min-max($min-width,$max-width){
+    @media screen and (min-width:$min-width) and (max-width:$max-width){ @content; }
+} 
+
+/**********
 @mixin breakpoint($point){
     @if $point == mobile{
-        @media only screen and (min-width:$mobile){@content;}
+        @media screen and (max-width:$mobile){@content;}
     }
      @else if $point == tablet{
-        @media only screen and (min-width:$tablet){@content;}
+        @media screen and (max-width:$tablet){@content;}
     }
      @else if $point == laptop{
-        @media only screen and (min-width:$laptop){@content;}
+        @media screen and (max-width:$laptop){@content;}
     }
      @else if $point == desktop{
-        @media only screen and (min-width:$desktop){@content;}
+        @media screen and (max-width:$desktop){@content;}
     }
 }
-
-@mixin breakpoint-max($point){
-    @if $point == mobile{
-        @media only screen and (max-width:$mobile){@content;}
-    }
-     @else if $point == tablet{
-        @media only screen and (max-width:$tablet){@content;}
-    }
-     @else if $point == laptop{
-        @media only screen and (max-width:$laptop){@content;}
-    }
-     @else if $point == desktop{
-        @media only screen and (max-width:$desktop){@content;}
-    }
-}
+**********/
  
 
 
 
-@mixin breakpoint-min-max($min-width,$max-width){
-    @media screen and (min-width:$min-width) and (max-width:$max-width){ @content; }
-}
+
+
+

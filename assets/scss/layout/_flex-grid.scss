@@ -5,18 +5,22 @@
 *****************************************************************/
 
 
-@include breakpoint (tablet){
+@include media (tablet){
     .flex{
         width:100%;
     }
 }
-@include breakpoint-max(laptop){
+
+@include media-max(laptop){
     .flex{
         width:100%;
     }
 }
-@include breakpoint-min-max(529px,768px){
+
+@include media-min-max(529px,768px){
     .flex{
         width:100%;
     }
 }
+
+

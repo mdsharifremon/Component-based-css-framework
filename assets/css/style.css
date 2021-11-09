@@ -1,3 +1,19 @@
+/**********
+@mixin breakpoint($point){
+    @if $point == mobile{
+        @media screen and (max-width:$mobile){@content;}
+    }
+     @else if $point == tablet{
+        @media screen and (max-width:$tablet){@content;}
+    }
+     @else if $point == laptop{
+        @media screen and (max-width:$laptop){@content;}
+    }
+     @else if $point == desktop{
+        @media screen and (max-width:$desktop){@content;}
+    }
+}
+**********/
 :root {
   --gray-50:#F9FAFB;
   --gray-100:#F3F4F6;
@@ -89,6 +105,22 @@
   --light:#F8F9FA;
 }
 
+/**********
+@mixin breakpoint($point){
+    @if $point == mobile{
+        @media screen and (max-width:$mobile){@content;}
+    }
+     @else if $point == tablet{
+        @media screen and (max-width:$tablet){@content;}
+    }
+     @else if $point == laptop{
+        @media screen and (max-width:$laptop){@content;}
+    }
+     @else if $point == desktop{
+        @media screen and (max-width:$desktop){@content;}
+    }
+}
+**********/
 /****************************************************************
                         Normalize CSS Styles
 *****************************************************************/
@@ -166,6 +198,22 @@ select {
     scroll-behavior: auto !important;
   }
 }
+/**********
+@mixin breakpoint($point){
+    @if $point == mobile{
+        @media screen and (max-width:$mobile){@content;}
+    }
+     @else if $point == tablet{
+        @media screen and (max-width:$tablet){@content;}
+    }
+     @else if $point == laptop{
+        @media screen and (max-width:$laptop){@content;}
+    }
+     @else if $point == desktop{
+        @media screen and (max-width:$desktop){@content;}
+    }
+}
+**********/
 /****************************************************************
                         Basic CSS Styles
 *****************************************************************/
@@ -233,6 +281,22 @@ text-xm {
   font-size: 1.2rem;
 }
 
+/**********
+@mixin breakpoint($point){
+    @if $point == mobile{
+        @media screen and (max-width:$mobile){@content;}
+    }
+     @else if $point == tablet{
+        @media screen and (max-width:$tablet){@content;}
+    }
+     @else if $point == laptop{
+        @media screen and (max-width:$laptop){@content;}
+    }
+     @else if $point == desktop{
+        @media screen and (max-width:$desktop){@content;}
+    }
+}
+**********/
 /***********************************************
 *            Text & Background Color           *
 ************************************************/
@@ -940,15 +1004,31 @@ text-xm {
   background-color: var(--light);
 }
 
+/**********
+@mixin breakpoint($point){
+    @if $point == mobile{
+        @media screen and (max-width:$mobile){@content;}
+    }
+     @else if $point == tablet{
+        @media screen and (max-width:$tablet){@content;}
+    }
+     @else if $point == laptop{
+        @media screen and (max-width:$laptop){@content;}
+    }
+     @else if $point == desktop{
+        @media screen and (max-width:$desktop){@content;}
+    }
+}
+**********/
 /****************************************************************
                         Flexbox Grid Layout CSS Styles
 *****************************************************************/
-@media only screen and (min-width: 768px) {
+@media (max-width: 768px) {
   .flex {
     width: 100%;
   }
 }
-@media only screen and (max-width: 1024px) {
+@media (max-width: 1024px) {
   .flex {
     width: 100%;
   }
@@ -958,9 +1038,41 @@ text-xm {
     width: 100%;
   }
 }
+/**********
+@mixin breakpoint($point){
+    @if $point == mobile{
+        @media screen and (max-width:$mobile){@content;}
+    }
+     @else if $point == tablet{
+        @media screen and (max-width:$tablet){@content;}
+    }
+     @else if $point == laptop{
+        @media screen and (max-width:$laptop){@content;}
+    }
+     @else if $point == desktop{
+        @media screen and (max-width:$desktop){@content;}
+    }
+}
+**********/
 /****************************************************************
                         Display Grid Layout CSS Styles
 *****************************************************************/
+/**********
+@mixin breakpoint($point){
+    @if $point == mobile{
+        @media screen and (max-width:$mobile){@content;}
+    }
+     @else if $point == tablet{
+        @media screen and (max-width:$tablet){@content;}
+    }
+     @else if $point == laptop{
+        @media screen and (max-width:$laptop){@content;}
+    }
+     @else if $point == desktop{
+        @media screen and (max-width:$desktop){@content;}
+    }
+}
+**********/
 /****************************************************************
                        Component CSS Styles
 *****************************************************************/
