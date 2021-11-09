@@ -1,0 +1,89 @@
+p {
+  font-size: 1.6rem;
+}
+
+h1 {
+  font-size: 4.2rem;
+}
+
+h2 {
+  font-size: 3.6rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2.4rem;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+h6 {
+  font-size: 1.4rem;
+}
+
+small {
+  font-size: 1.2rem;
+}
+
+span {
+  font-size: 1.6rem;
+}
+
+text-lg {
+  font-size: 3.2rem;
+}
+
+text-xl {
+  font-size: 3.6rem;
+}
+
+text-xxl {
+  font-size: 4.2rem;
+}
+
+text-md {
+  font-size: 2.4rem;
+}
+
+text-base {
+  font-size: 1.6rem;
+}
+
+text-sm {
+  font-size: 1.4rem;
+}
+
+text-xm {
+  font-size: 1.2rem;
+}
+
+p {
+  font-size: 16px;
+  color: gray;
+  background-color: #000000;
+}
+
+h1 {
+  font-size: 24px;
+  color: red;
+  background-color: #808080;
+}
+
+p {
+  font-size: 16px;
+  color: gray;
+  background-color: #000000;
+}
+
+h1 {
+  font-size: 24px;
+  color: red;
+  background-color: #808080;
+}
+
+/*# sourceMappingURL=style.css.map */
