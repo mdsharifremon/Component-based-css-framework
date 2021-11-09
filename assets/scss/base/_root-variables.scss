@@ -1,0 +1,22 @@
+@use "../abstracts" as *;
+
+
+:root {
+    @each $color, $shades in $colors {
+        @each $shade, $value in $shades {
+            @if $color == bootstrap{
+                    --#{$shade}:#{$value};
+            }
+            @else{
+                --#{$color}-#{$shade}:#{$value};
+            }
+        }
+    }
+};
+
+
+
+
+
+
+
